@@ -96,7 +96,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
     // goerli: {
-    //   provider: () => new HDWalletProvider("prison transfer ice future snake biology build narrow route citizen truth doll", `https://eth-goerli.g.alchemy.com/v2/YZkkZznSP-bBw8JRsQYIPtjC_NNbZuLH`),
+    //   provider: () => new HDWalletProvider("MNEMONIC", `ALCHEMY_API_URL`),
     //   network_id: 5,       // Goerli's id
     //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
     //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
@@ -104,7 +104,7 @@ module.exports = {
     // },
     goerli: {
       provider: () => {
-        return new HDWalletProvider("prison transfer ice future snake biology build narrow route citizen truth doll", `https://eth-goerli.g.alchemy.com/v2/YZkkZznSP-bBw8JRsQYIPtjC_NNbZuLH`)
+        return new HDWalletProvider("MNEMONIC", `ALCHEMY_API_URL`)
       },
       network_id: '5', // eslint-disable-line camelcase
       gas: 4700000,
