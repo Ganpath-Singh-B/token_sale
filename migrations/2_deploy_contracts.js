@@ -8,3 +8,7 @@ module.exports = function(deployer) {
   });
   
 };
+
+//truffle migrate --network goerli
+
+//npm run dev
